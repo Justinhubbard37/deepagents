@@ -2,6 +2,13 @@
 
 # Changelog
 
+## [0.0.8](https://github.com/Justinhubbard37/deepagents/compare/langchain-runloop==0.0.7...langchain-runloop==0.0.8) (2026-08-21)
+
+
+### Bug Fixes
+
+* **runloop:** require deepagents 0.7.x ([#5149](https://github.com/Justinhubbard37/deepagents/issues/5149)) ([ea09982](https://github.com/Justinhubbard37/deepagents/commit/ea099822621cc92e4e10e6dc254f474f607213db))
+
 ## [0.0.7](https://github.com/langchain-ai/deepagents/compare/langchain-runloop==0.0.6...langchain-runloop==0.0.7) (2026-07-29)
 
 ### Bug Fixes
