@@ -2,6 +2,50 @@
 
 # Deep Agents Changelog
 
+## [0.8.0](https://github.com/Justinhubbard37/deepagents/compare/deepagents==0.7.8...deepagents==0.8.0) (2026-08-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* **sdk,code,quickjs:** make the `ToDoListMiddleware` list opt-in ([#4929](https://github.com/Justinhubbard37/deepagents/issues/4929))
+* **sdk:** remove deprecated backend compatibility shims ([#4541](https://github.com/Justinhubbard37/deepagents/issues/4541))
+
+* **sdk:** remove deprecated backend compatibility shims ([#4541](https://github.com/Justinhubbard37/deepagents/issues/4541)) ([540a0fa](https://github.com/Justinhubbard37/deepagents/commit/540a0fa7eb9a88d82413cf10a5cb5c807d491385))
+
+
+### Features
+
+* **sdk,code,quickjs:** lean system prompt by default, restorable ([#4859](https://github.com/Justinhubbard37/deepagents/issues/4859)) ([a8d1b32](https://github.com/Justinhubbard37/deepagents/commit/a8d1b32aa4136d0498ba7b48367c8001ac462bd0))
+* **sdk,code,quickjs:** make the `ToDoListMiddleware` list opt-in ([#4929](https://github.com/Justinhubbard37/deepagents/issues/4929)) ([9340518](https://github.com/Justinhubbard37/deepagents/commit/9340518a26c4287f9ad0c543edc9b69106c15154))
+* **sdk:** expose `execute` exit code in artifact ([#5300](https://github.com/Justinhubbard37/deepagents/issues/5300)) ([de8bfca](https://github.com/Justinhubbard37/deepagents/commit/de8bfca8255d673c1e7860e8c158ed119238197e))
+* **sdk:** mark editable installs in `lc_versions.deepagents` ([#5158](https://github.com/Justinhubbard37/deepagents/issues/5158)) ([ee7ac3d](https://github.com/Justinhubbard37/deepagents/commit/ee7ac3d47980e4037403bfea1a13b7b51e06fb4a))
+* **sdk:** trim built-in tool descriptions ([#5009](https://github.com/Justinhubbard37/deepagents/issues/5009)) ([761f5f0](https://github.com/Justinhubbard37/deepagents/commit/761f5f0882dee186f2700f3c903829a5542626fe))
+
+
+### Bug Fixes
+
+* **sdk:** add `files` state only for state backends ([#5643](https://github.com/Justinhubbard37/deepagents/issues/5643)) ([63c13f3](https://github.com/Justinhubbard37/deepagents/commit/63c13f3e6bc79a5304e542178ac410b517c64c31))
+* **sdk:** batch concurrent `ContextHubBackend` mutations ([#5471](https://github.com/Justinhubbard37/deepagents/issues/5471)) ([822f7c9](https://github.com/Justinhubbard37/deepagents/commit/822f7c9b02e6d99bdb46b5545bb2543783c01769))
+* **sdk:** diagnose rubric grader structured output errors ([#4938](https://github.com/Justinhubbard37/deepagents/issues/4938)) ([f51d3a0](https://github.com/Justinhubbard37/deepagents/commit/f51d3a0145a0301317c36b0ae15263007dacd6f1))
+* **sdk:** empty read for degenerate `read_file` windows ([#5184](https://github.com/Justinhubbard37/deepagents/issues/5184)) ([6bf3b68](https://github.com/Justinhubbard37/deepagents/commit/6bf3b68441e04e9e25883a4f91e6b8d0d6c15703))
+* **sdk:** identify file-capable provider classes ([#5326](https://github.com/Justinhubbard37/deepagents/issues/5326)) ([e5d5391](https://github.com/Justinhubbard37/deepagents/commit/e5d53917c01aadcebe4e7e4a1974322033ae6c87))
+* **sdk:** include HTTP status in rubric grader errors ([#4967](https://github.com/Justinhubbard37/deepagents/issues/4967)) ([bca70aa](https://github.com/Justinhubbard37/deepagents/commit/bca70aa1f30ee1472809894e2474a76e4ff2f8bd))
+* **sdk:** make `BackendProtocol.glob` recursive for bare patterns ([#5026](https://github.com/Justinhubbard37/deepagents/issues/5026)) ([32f35d5](https://github.com/Justinhubbard37/deepagents/commit/32f35d5e01f460549c10365eb569978909f5c969))
+* **sdk:** offload conversation history to distinct session ID when summarizing ([#5470](https://github.com/Justinhubbard37/deepagents/issues/5470)) ([fa55c52](https://github.com/Justinhubbard37/deepagents/commit/fa55c52fe774462b2775c0d77dcf811d6dfd0e35))
+* **sdk:** resolve exact-file `delete` targets with first-match-wins o… ([#5229](https://github.com/Justinhubbard37/deepagents/issues/5229)) ([6dd2a7d](https://github.com/Justinhubbard37/deepagents/commit/6dd2a7d2f83bd63844a987f6ec65ac9244ec8c5b))
+* **sdk:** scrub multimodal content blocks unsupported by the model's profile ([#5194](https://github.com/Justinhubbard37/deepagents/issues/5194)) ([bdc6104](https://github.com/Justinhubbard37/deepagents/commit/bdc610445534ba339360f3988de6b50b60482f1d))
+* **sdk:** warn instead of silently skipping unresolved state schemas ([#5166](https://github.com/Justinhubbard37/deepagents/issues/5166)) ([2054c07](https://github.com/Justinhubbard37/deepagents/commit/2054c078071b4248707c2b28c7e5254e36703e66))
+
+
+### Performance Improvements
+
+* **langsmith-sandbox:** run LangSmith sandbox commands over the async client ([#5061](https://github.com/Justinhubbard37/deepagents/issues/5061)) ([0d08747](https://github.com/Justinhubbard37/deepagents/commit/0d0874710615df2c89c3c30e56bfdabb73b44d99))
+
+
+### Reverted Changes
+
+* **code,sdk:** revert `SystemPromptConfig` ([#4969](https://github.com/Justinhubbard37/deepagents/issues/4969)) ([d046427](https://github.com/Justinhubbard37/deepagents/commit/d046427b536c8ddbce5d804d6ae8b860511a9b44))
+
 ## [0.7.8](https://github.com/langchain-ai/deepagents/compare/deepagents==0.7.7...deepagents==0.7.8) (2026-08-20)
 
 ### Bug Fixes
