@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.6](https://github.com/Justinhubbard37/deepagents/compare/deepagents-talon==0.0.5...deepagents-talon==0.0.6) (2026-08-27)
+
+
+### Features
+
+* **code,talon:** require Python 3.12 or greater ([#5603](https://github.com/Justinhubbard37/deepagents/issues/5603)) ([04de43e](https://github.com/Justinhubbard37/deepagents/commit/04de43e05adcbd38f1022f1fafe93f6748c2a032))
+
+
+### Bug Fixes
+
+* **talon:** migrate MCP discovery to `discover_mcp_config_sources` ([#5803](https://github.com/Justinhubbard37/deepagents/issues/5803)) ([5cdd977](https://github.com/Justinhubbard37/deepagents/commit/5cdd97730708b0480cb7d32792717dcdcd02f4ea))
+
 ## [0.0.5](https://github.com/langchain-ai/deepagents/compare/deepagents-talon==0.0.4...deepagents-talon==0.0.5) (2026-08-26)
 
 ### Bug Fixes
